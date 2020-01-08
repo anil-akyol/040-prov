@@ -1,9 +1,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Flyttst&auml;dgruppen</title>
-<link rel="stylesheet" type="text/css" href="https://fsgoffert.flyttsyd.se/Offert/index.css" />
-<?php include("https://fsgoffert.flyttsyd.se/Offert/insert.php"); ?>
+<title>040-Form</title>
+<link rel="stylesheet" type="text/css" href="040-prov/form.css" />
+<?php include("040-prov/form.php"); ?>
 
 
 </head>
@@ -11,109 +11,38 @@
 
 <div class="container">
 
-<h1>Offertförfrågan</h1>
-
-<h3>Få en kostnadsfri offert inom 24 timmar.</h3>
-<p style="width: 70%; color: #666; margin-top: -10px;">
-<br>
-OBS! Ort & Boyta kvm (*) måste fyllas i.
-<br>
+<h1>Sign up</h1>
 
 <form id="form" name="form" method="post" action="insert.php"> 
-Kund
-<select name="kund" id="kund" style="">
-<option value="0">Privat</option>
-<option value="1">Företag</option>
-</select> 
-
+<h3>Course</h3>
 <br />
-<select name="tillhor" id="tillhor" style="display: none;">
-<option value="Flyttstädgruppen">Flyttstädgruppen</option>
-</select>
-  <br />
-
-
-Förnamn<p class="undertext">Ditt förnamn.</p>
-<input type="text" name="fnamn" id="fnamn" style="" /> <br />
+<br />
+Name <br />
+<input type="text" name="name" id="name" style="" /> <br />
 
 <br />
 
-Efternamn <p class="undertext">Ditt efternamn.</p>
-<input type="text" name="enamn" id="enamn" style=""/> <br />
-
-<br />
-E-post <p class="undertext">E-postadress vi kan skicka offerten till.</p>
-<input type="text" name="epost" id="epost" style="" /> <br />
-
-<br />
-
-Ort *<p class="undertext">I vilken ort finns lägenheten/huset du vill ha städat?</p>
-<input type="text" name="ort" id="ort" style="" required="required" /> <br />
-
-<br />
-
-Gatuadress <p class="undertext">Gatuadress till lägenheten/huset du vill ha städat.</p>
-<input type="text" name="gadress" id="gadress" style=""/><br />
-
-<br />
-Telefon <p class="undertext">Telefonnummer vi kan nå dig på dagtid.</p>
-<input type="tel" name="tel" id="tel" style=""/> <br />
-<br />
-Typ av städtjänst <p class="undertext">Vilken typ av städtjänst du vill ha.</p>
-<select name="stjanst" id="stjanst" style="" >
-<option value="Flyttstädning">Flyttstädning</option>
-<option value="Byggstädning">Byggstädning</option>
-<option value="Visningsstädning">Visningsstädning</option>
-<option value="Dödsbostädning">Dödsbostädning</option>
-<option value="Slutstädning">Slutstädning av lokal</option>
-</select> <br />
-<br />
-Önskad städdatum<p class="undertext">Mellan vilka datum vill du att vi städar? Har du en specifik datum, sätter du detta som både start och slutdatum.</p>
-
-<div>
-Start <br />
+Date <br />
 <input class="start" type="date" name="sdatumfran" id="sdatumfran" style="" />
 <br />
 <br />
-
-Slut <br />
-<input class="start" type="date" name="sdatumtill" id="sdatumtill" style="" /> <br />
 <br />
-</div>
-Boyta kvm *<p class="undertext">Hur stor lägenheten/huset är i boytan.</p>
-<input type="number" name="boyta" id="boyta" style="border: 1px solid #f0f0f0;" required="required"/><br />
-
 <br />
-
-Biyta <p class="undertext">Extra ytor du vill ha städat (ex. inglasad balkong, garage, källare).</p>
-<input type="text" name="biyta" id="biyta" style=""/><br />
+<h3>Company</h3>
 <br />
-
-Biyta kvm <p class="undertext">Storleken på biytan.</p>
-<input type="number" name="biytakvm" value="0" id="biytakvm" style="border: 1px solid #f0f0f0;"/> <br />
 <br />
-
-Typ av boende <p class="undertext">Har du hus, lägenhet eller en lokal som ska städas?</p>
-<select name="hem" id="hem" style="" >
-<option value="Hus">Hus</option>
-<option value="Lägenhet">Lägenhet</option>
-<option value="Lokal">Lokal</option>
-</select> <br />
+Name
+<input type="text" name="cname" id="cname" style=""/> <br />
 
 <br />
-
-
-Meddelande/Övrigt:<br /><br />
-<textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br />
+Phone
+<input type="tel" name="phone" id="phone" style=""/> <br />
 <br />
 
-<input class="skicka" type="submit" name="skicka" id="skicka" value="Skicka meddelandet" />
-</form>
-</div>
+E-mail
+<input type="text" name="email" id="email" style="" /> <br />
 
-
-<br>
-
+<br />
 
 </body>
 </html>
